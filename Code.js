@@ -80,7 +80,7 @@ function onEdit(e) {
   var actualDate = sheet.getRange(ACTUAL_COMPLETION_DATE_COLUMN + row).getValue();
   if (plannedDate instanceof Date && actualDate instanceof Date) {
     if (isSameDay(plannedDate, actualDate)) {
-        SpreadsheetApp.getUi().alert("Congratulations Kanchann! You completed the task on the planned date!");
+        SpreadsheetApp.getUi().alert("Congratulations! You completed the task on the planned date!");
     }
   }
 }
